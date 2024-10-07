@@ -1,0 +1,9 @@
+CREATE TABLE IF NOT EXISTS blog (
+    id SERIAL PRIMARY KEY,
+    title VARCHAR(255),
+    content TEXT,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    category VARCHAR(255),
+    tags TEXT[]
+);
